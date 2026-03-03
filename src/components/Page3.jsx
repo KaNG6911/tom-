@@ -1,4 +1,4 @@
-import {boxes} from "../utils/boxes"
+import { boxes } from "@/Utils/boxes";
 
 export const Page3 = () => {
   return (
@@ -8,7 +8,13 @@ export const Page3 = () => {
           Skills
         </div>
         <main>The skills, tools and technologies I am really good at:</main>
-        
+        <div className="flex flex-wrap gap-10 justify-center w-full h-100 overflow-y-auto">
+        {boxes.map((box) => (
+          <div key={box.name} className="flex flex-col items-center ">
+            <img src={`/images/${box.image}`} />
+            <p>{box.name}</p>
+          </div>
+        ))}</div>
       </div>
     </div>
   );

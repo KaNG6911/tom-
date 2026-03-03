@@ -17,5 +17,9 @@
   },
   "devDependencies": {
     "babel-plugin-react-compiler": "1.0.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/KaNG6911/tom-.git",
+  "author": "<gna.k6911@gmail.com>",
+  "license": "MIT"
 }
