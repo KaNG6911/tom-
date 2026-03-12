@@ -1,5 +1,5 @@
 export const boxes = [
-  { name: "Javascript", image: "icon-javascript.svg" },
+  { name: "Javascript", image: "icon-javascript.png" },
   { name: "Typescript", image: "icon-typescript.svg" },
   { name: "React", image: "icon-react.svg" },
   { name: "Next.js", image: "icon-nextjs.svg" },

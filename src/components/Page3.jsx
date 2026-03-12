@@ -9,12 +9,17 @@ export const Page3 = () => {
         </div>
         <main>The skills, tools and technologies I am really good at:</main>
         <div className="flex flex-wrap gap-10 justify-center w-full h-100 overflow-y-auto">
-        {boxes.map((box) => (
-          <div key={box.name} className="flex flex-col items-center ">
-            <img src={`/images/${box.image}`} />
-            <p>{box.name}</p>
-          </div>
-        ))}</div>
+          {boxes.map((box) => (
+            <div key={box.name} className="flex flex-col items-center ">
+              <img
+                src={`/logos/${box.image}`}
+                alt={box.name}
+                className="grid grid-cols-6 gap-5"
+              />
+              <p>{box.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
